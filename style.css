@@ -17,7 +17,7 @@ header {
 }
 
 .left img {
-    height: 30px;
+    height: 2.5vw;
 }
 
 .container {
@@ -25,7 +25,7 @@ header {
 }
 
 nav {
-    font-size: 12px;
+    font-size: .9vw;
     padding-top: 15px;
 }
 
@@ -46,15 +46,15 @@ nav ul li {
 
 .searchbar {
     width: 25vw;
-    padding: 7px 10px;
+    padding: 1.2vh 1.5vw;
     border: none;
     background-color: rgb(252, 251, 252);
     border-radius: 5px;
+    outline: 0;
 }
 
 .mainpng {
     width: 80vw;
-
 }
 
 .caption1 {
@@ -64,36 +64,86 @@ nav ul li {
 .caption1 h2 {
     font-style: italic;
 }
-.button {
 
+
+.right i {
+    font-size: larger;
+    display: none;
+}
+
+.button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 2.6vh 2vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1.3vw;
+    margin: 2vh 2vw;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 8px;
-  }
+}
 
-  .button1 {
-    background-color: white; 
-    color: black; 
+.button1 {
+    background-color: white;
+    color: black;
     border: 2px solid #ff0000;
     margin-top: 1px;
     margin-bottom: 30px;
-  }
-  
-  .button1:hover {
+}
+
+.button1:hover {
     background-color: #db2b2b;
     color: white;
-  }
+}
 
-footer{
+footer {
     padding: 12px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
+}
+
+@media (max-width:670px) {
+
+    .left img {
+        height: 30px;
+        padding-left: 2vw;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .searchbar {
+        width: 40vw;
+        padding: 7px 1px;
+        margin-right: 10vw;
+        outline: none;
+        height: 4vh;
+    }
+
+    .profile,
+    .whishlist,
+    .bag {
+        display: none;
+    }
+
+
+    .button {
+        font-size: 3.2vw;
+        padding: 2vh 4vw;
+        margin: 2vh 2vw;
+    }
+
+    nav {
+        padding-right: 3vh;
+    }
+
+    .right i {
+        font-size: 5vw;
+        font-weight: bolder;
+        display: block;
+    }
+
 }
